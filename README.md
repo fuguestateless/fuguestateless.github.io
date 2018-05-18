@@ -1,2 +1,5 @@
 # fuguestateless.github.io
-Company website
+
+> Company website
+
+Adapted from https://html5up.net/story
