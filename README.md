@@ -2,4 +2,4 @@
 
 > Company website
 
-Adapted from https://html5up.net/story
+Code licensed under MIT.
