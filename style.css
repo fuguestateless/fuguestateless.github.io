@@ -180,18 +180,39 @@ html, body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	color: #6c3d3c;
+}
+
+header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
 .mark {
+	max-width: 250px;
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+	.mark {
+		max-width: 200px;
+	}
+}
+@media (max-width: 425px) {
+	.mark {
+		max-width: 170px;
+	}
+}
 
 .text {
+	max-width: 500px;
 	margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+	.text {
+		max-width: 350px;
+	}
 }
 
 .subtitle {
@@ -205,6 +226,11 @@ html, body {
 	margin-right: 20px;
 	box-sizing: border-box;
 }
+@media (max-width: 425px) {
+	.projects {
+		margin-top: 70px;
+	}
+}
 
 .projects-title {
 	font-size: 30px;
@@ -214,6 +240,8 @@ html, body {
 .projects-content {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 @media (max-width: 768px) {
 	.projects-content {
@@ -221,8 +249,8 @@ html, body {
 	}
 }
 
-.projects-content-item img {
-	box-shadow: 3px 4px 10px -2px rgba(0, 0, 0, 0.2), -1px -1px 5px -1px rgba(0, 0, 0, 0.1);
+.projects-content-item {
+	max-width: 400px;
 }
 
 .projects-content-item:first-child {
@@ -235,17 +263,27 @@ html, body {
 	}
 }
 
-.cta {
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
+.projects-content-item img {
+	width: 100%;
+	box-shadow: 3px 4px 10px -2px rgba(0, 0, 0, 0.2), -1px -1px 5px -1px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
 	margin-top: 100px;
 	margin-bottom: 80px;
-	align-items: center;
+	text-align: center;
+}
+@media (max-width: 425px) {
+	.contact {
+		margin-top: 80px;
+	}
+}
+
+.contact-email {
 	color: #6c3d3c;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 20px 40px;
+	padding: 16px 32px;
 	border: 1px solid #6c3d3c;
 	border-radius: 100px;
 }
